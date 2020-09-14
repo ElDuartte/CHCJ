@@ -1,3 +1,7 @@
+figure {
+  margin: 0;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -13,12 +17,19 @@ h6 {
   font-weight: normal;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1 {
   font-size: 40px;
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: white;
-  margin: ;
+  margin: 0;
 }
 
 h1 strong {
@@ -32,6 +43,8 @@ h1 strong {
   background-size: 500px 300px;
   background-repeat: no-repeat;
   background-position-x: right;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio {
@@ -57,9 +70,46 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header a {
   color: white;
   text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header li {
+  height: inherit;
+}
+
+.menu {
+  /* .menu hereda de .header */
+  height: inherit;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
 }
